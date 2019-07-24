@@ -19,7 +19,7 @@ const Results = ({ input }) => {
             90<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.9}
+            {Math.round(input * 0.9 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -28,7 +28,7 @@ const Results = ({ input }) => {
             80<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.8}
+            {Math.round(input * 0.8 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Results = ({ input }) => {
             70<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.7}
+            {Math.round(input * 0.7 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Results = ({ input }) => {
             60<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.6}
+            {Math.round(input * 0.6 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -55,7 +55,7 @@ const Results = ({ input }) => {
             50<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.5}
+            {Math.round(input * 0.5 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Results = ({ input }) => {
             40<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.4}
+            {Math.round(input * 0.4 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -73,7 +73,7 @@ const Results = ({ input }) => {
             30<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.3}
+            {Math.round(input * 0.3 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -82,7 +82,7 @@ const Results = ({ input }) => {
             20<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.2}
+            {Math.round(input * 0.2 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
@@ -91,7 +91,7 @@ const Results = ({ input }) => {
             10<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input * 0.1}
+            {Math.round(input * 0.1 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>

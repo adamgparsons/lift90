@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 
 const FormInput = ({ input }) => {
   const [value, setValue] = useState("");
-
   useEffect(() => {
-    input(value.toString());
+    input(value);
   });
 
   return (
@@ -14,7 +13,9 @@ const FormInput = ({ input }) => {
         name="weight"
         placeholder="Enter 1 rep max"
         className="input"
-        onChange={event => setValue(event.target.value)}
+        onChange={event => {
+          setValue(event.target.value);
+        }}
         value={value}
         autoFocus
         autoComplete="off"
