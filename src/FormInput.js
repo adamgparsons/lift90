@@ -19,6 +19,7 @@ const FormInput = ({ input }) => {
         value={value}
         autoFocus
         autoComplete="off"
+        pattern="\d*"
       />
       <label className="ml2 white" htmlFor="weight">
         kg
