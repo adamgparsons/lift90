@@ -14,9 +14,7 @@ function App() {
       </MetaTags>
       <div className="bar" />
       <div className="lato mw-400 center ph2-5">
-        <h1 className="white normal mt4 mt5-ns f3 f2-ns ">
-          90% lift calculator
-        </h1>
+        <h1 className="white normal mt4 mt5-ns f2 ">90% lift calculator</h1>
         <FormInput input={formInput => setOneRepMax(formInput)} />
 
         {OneRepMax ? <Results input={OneRepMax} /> : ""}

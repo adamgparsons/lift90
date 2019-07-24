@@ -4,7 +4,7 @@ const Results = ({ input }) => {
   return (
     <React.Fragment>
       <p className="c-light-grey mt5"> Based on 90% of 1 rep max</p>
-      <div className="bg-c-pale-grey mw-100 ph2-5 br3 mb4">
+      <div className="bg-c-pale-grey mw-100 ph2-5 br3 mb5">
         <div className="flex ph1 pv3 justify-between bb b-c-light-grey">
           <div className="c-light-grey f3">
             100<span className="f5"> %</span>

@@ -12,7 +12,7 @@ const FormInput = ({ input }) => {
         type="number"
         name="weight"
         placeholder="Enter 1 rep max"
-        className="input"
+        className="input f4"
         onChange={event => {
           setValue(event.target.value);
         }}
@@ -21,7 +21,7 @@ const FormInput = ({ input }) => {
         autoComplete="off"
         pattern="\d*"
       />
-      <label className="ml2 white" htmlFor="weight">
+      <label className="ml2 white f4" htmlFor="weight">
         kg
       </label>
     </form>
