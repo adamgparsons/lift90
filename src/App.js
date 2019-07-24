@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./styles/App.css";
+import "./styles/tachyons.min.css";
+import FormInput from "./FormInput";
+import Results from "./Results";
 
 function App() {
+  const [OneRepMax, setOneRepMax] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <div className="bar" />
+      <div className="lato mw-400 center ph2-5">
+        <h1 className="white normal mt4 mt5-ns f3 f2-ns ">
+          90% lift calculator
+        </h1>
+        <FormInput input={formInput => setOneRepMax(formInput)} />
+
+        {OneRepMax ? <Results input={OneRepMax} /> : ""}
+      </div>
+    </React.Fragment>
   );
 }
 
