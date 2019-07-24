@@ -10,7 +10,7 @@ const Results = ({ input }) => {
             100<span className="f5"> %</span>
           </div>
           <div className="white f3">
-            {input}
+            {Math.round(input * 1 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
