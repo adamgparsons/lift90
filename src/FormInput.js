@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const FormInput = ({ input }) => {
   const [value, setValue] = useState("");
   useEffect(() => {
-    input(value);
+    input(value * 0.9);
   });
 
   return (

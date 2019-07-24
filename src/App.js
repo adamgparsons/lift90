@@ -4,6 +4,9 @@ import "./styles/tachyons.min.css";
 import FormInput from "./FormInput";
 import Results from "./Results";
 import MetaTags from "react-meta-tags";
+import Favicon16 from "./assets/favicon-16x16.png";
+import Favicon32 from "./assets/favicon-32x32.png";
+import AppleTouch from "./assets/apple-touch-icon.png";
 
 function App() {
   const [OneRepMax, setOneRepMax] = useState("");
@@ -11,6 +14,11 @@ function App() {
     <React.Fragment>
       <MetaTags>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="apple-touch-icon" sizes="180x180" href={AppleTouch} />
+        <link rel="icon" type="image/png" sizes="32x32" href={Favicon32} />
+        <link rel="icon" type="image/png" sizes="16x16" href={Favicon16} />
+        <link rel="manifest" href="/site.webmanifest" />
+        <title>Lift90</title>
       </MetaTags>
       <div className="bar" />
       <div className="lato mw-400 center ph2-5">
