@@ -16,6 +16,15 @@ const Results = ({ input }) => {
         </div>
         <div className=" flex ph1 pv3 justify-between bb b-c-light-grey">
           <div className="c-light-grey f3">
+            95<span className="f5"> %</span>
+          </div>
+          <div className="white f3">
+            {Math.round(input * 0.95 * 10) / 10}
+            <span className="f5"> kg</span>
+          </div>
+        </div>
+        <div className=" flex ph1 pv3 justify-between bb b-c-light-grey">
+          <div className="c-light-grey f3">
             90<span className="f5"> %</span>
           </div>
           <div className="white f3">
@@ -25,10 +34,28 @@ const Results = ({ input }) => {
         </div>
         <div className=" flex ph1 pv3 justify-between bb b-c-light-grey">
           <div className="c-light-grey f3">
+            85<span className="f5"> %</span>
+          </div>
+          <div className="white f3">
+            {Math.round(input * 0.85 * 10) / 10}
+            <span className="f5"> kg</span>
+          </div>
+        </div>
+        <div className=" flex ph1 pv3 justify-between bb b-c-light-grey">
+          <div className="c-light-grey f3">
             80<span className="f5"> %</span>
           </div>
           <div className="white f3">
             {Math.round(input * 0.8 * 10) / 10}
+            <span className="f5"> kg</span>
+          </div>
+        </div>
+        <div className=" flex ph1 pv3 justify-between bb b-c-light-grey">
+          <div className="c-light-grey f3">
+            75<span className="f5"> %</span>
+          </div>
+          <div className="white f3">
+            {Math.round(input * 0.75 * 10) / 10}
             <span className="f5"> kg</span>
           </div>
         </div>
