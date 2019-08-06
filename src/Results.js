@@ -1,7 +1,23 @@
 import React from "react";
 
 const Results = ({ input }) => {
-  const percentages = [10, 20, 30, 40, 50, 60, 70, 75, 80, 85, 90, 95, 100];
+  const percentages = [
+    10,
+    20,
+    30,
+    40,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95,
+    100
+  ];
   const lastPercentage = percentages.length;
   const listItems = percentages.reverse().map((percentage, i) => (
     <div
@@ -10,6 +26,7 @@ const Results = ({ input }) => {
           ? "flex ph1 pt3 pb4 justify-between"
           : "flex ph1 pv3 justify-between bb b-c-light-grey"
       }
+      key={i}
     >
       <div className="c-light-grey f3">
         {percentage}
