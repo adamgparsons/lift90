@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const FormInput = ({ input }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
   useEffect(() => {
     input(value * 0.9);
   });
@@ -20,6 +20,7 @@ const FormInput = ({ input }) => {
         autoFocus
         autoComplete="off"
         pattern="\d*"
+        inputMode="decimal"
       />
       <label className="ml2 white f4" htmlFor="weight">
         kg
